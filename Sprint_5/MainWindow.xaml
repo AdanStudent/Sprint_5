@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Log_Button" Content="Button" HorizontalAlignment="Left" Margin="50,137,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="TimeSheet" HorizontalAlignment="Left" Margin="290,87,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="59" Width="163"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="23" Margin="50,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
