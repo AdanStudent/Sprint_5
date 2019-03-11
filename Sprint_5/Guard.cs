@@ -16,10 +16,10 @@ namespace Sprint_5
 
         private int MaxHours;
 
-        public Guard(float h, string n)
+        public Guard(float hours, string name)
         {
-            Hours = h;
-            Name = n;
+            Hours = hours;
+            Name = name;
             MaxHours = 40;
             this.IsWorking = false;
         }
@@ -29,6 +29,7 @@ namespace Sprint_5
             if (!IsWorking && Hours <= MaxHours)
             {
                 this.IsWorking = true;
+                this.Hours += 8;
             }
         }
 

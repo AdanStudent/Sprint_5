@@ -24,5 +24,14 @@ namespace Sprint_5
         {
             InitializeComponent();
         }
+
+        private void Guard_Loaded()
+        {
+            ViewModelGuard viewControl = new ViewModelGuard();
+            viewControl.LoadGuards();
+
+            this.DataContext = viewControl.Guards[0];
+
+        }
     }
 }
